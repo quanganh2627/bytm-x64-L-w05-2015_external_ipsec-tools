@@ -87,6 +87,10 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/src/include-glibc \
 	$(LOCAL_PATH)/src/libipsec
 
+LOCAL_EXPORT_C_INCLUDE_DIRS += \
+	$(LOCAL_PATH)/src/include-glibc \
+	$(LOCAL_PATH)/src/libipsec
+
 LOCAL_MODULE := libipsec
 
 LOCAL_MODULE_TAGS := optional

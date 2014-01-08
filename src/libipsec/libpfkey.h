@@ -97,7 +97,9 @@ extern int libipsec_opt;
 #define LIBIPSEC_OPT_NATT		0x01
 #define LIBIPSEC_OPT_FRAG		0x02
 #define LIBIPSEC_OPT_SEC_CTX		0x04
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* IPsec Library Routines */
 
 int ipsec_check_keylen __P((u_int, u_int, u_int));
@@ -183,6 +185,9 @@ int pfkey_send_add_nat __P((int, u_int, u_int, struct sockaddr *,
 	caddr_t, u_int, u_int, u_int, u_int, u_int, u_int32_t, u_int64_t,
 	u_int64_t, u_int64_t, u_int32_t,
 	u_int8_t, u_int16_t, u_int16_t, struct sockaddr *, u_int16_t));
+#ifdef __cplusplus
+}
+#endif
 
 #ifndef __SYSDEP_SA_LEN__
 #define __SYSDEP_SA_LEN__
